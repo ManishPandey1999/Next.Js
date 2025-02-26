@@ -1,0 +1,10 @@
+{
+    "menu":[
+        { "name": "Home", "link": "/" },
+        { "name": "About Us", "link": "/about" },
+        { "name": "Shop", "link": "/shop" },
+        { "name": "Categories", "link": "/categories" },
+        { "name": "Blog", "link": "/blog" },
+        { "name": "Contact Us", "link": "/contact" }
+    ]
+}
