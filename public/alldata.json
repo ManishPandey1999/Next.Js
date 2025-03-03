@@ -1,0 +1,16 @@
+{
+    "menuHeader":[
+        { "name": "Home", "link": "/" },
+        { "name": "About Us", "link": "/about" },
+        { "name": "Shop", "link": "/shop" },
+        { "name": "Categories", "link": "/categories" },
+        { "name": "Blog", "link": "/blog" },
+        { "name": "Contact Us", "link": "/contact" }
+    ],
+
+    "bannerData":[
+        {"heading": "Fresh Styles, Just Arrived!", "para": "Discover the latest trends and must-have collections. Upgrade your wardrobe with our newest arrivals.", "button": "Shop Now", "link": "/", "image": "/images/banner-images/banner-1.jpg"},
+        {"heading": "Up to 50% Off – Limited Time!", "para": "Grab your favorites at unbeatable prices! Don't miss out on our exclusive deals and discounts.", "button": "Grab the Deal", "link": "/", "image": "/images/banner-images/banner-2.jpg"},
+        {"heading": "Luxury & Elegance Redefined", "para": "Explore our exclusive collection of premium products designed for style and comfort.", "button": "Explore Now", "link": "/", "image": "/images/banner-images/banner-3.jpg"}
+    ]
+}
