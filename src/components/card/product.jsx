@@ -48,7 +48,7 @@ function Product() {
                         return(
                             <div key={productItem.id} className="product_card_col flex py-2 px-3 bg-white shadow rounded">
                                 <div className='flex flex-col justify-between items-center'>
-                                    <div className="product_image w-full h-auto max-h-[170px] overflow-hidden mb-3">
+                                    <div className="product_image flex items-center justify-center w-full h-auto max-h-[170px] overflow-hidden mb-3">
                                         <img src={productItem.image} alt="" className='rounded' />
                                     </div>
                                     <div className="product_deatils">

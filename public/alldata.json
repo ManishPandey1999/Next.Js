@@ -18,6 +18,11 @@
         {"id": "1", "productName": "product 1", "productInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, sapiente.", "price": "120", "totalProduct": "5", "image": "/images/product-images/cart-img-1.jpg"},
         {"id": "2", "productName": "product 2", "productInfo": "Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.", "price": "180", "totalProduct": "4", "image": "/images/product-images/cart-img-2.jpg"},
         {"id": "3", "productName": "product 3", "productInfo": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.", "price": "380", "totalProduct": "7", "image": "/images/product-images/cart-img-3.jpg"},
-        {"id": "4", "productName": "product 4", "productInfo": "Class aptent taciti sociosqu ad litora torquent per conubia nostra.", "price": "340", "totalProduct": "6", "image": "/images/product-images/cart-img-4.jpg"}
+        {"id": "4", "productName": "product 4", "productInfo": "Class aptent taciti sociosqu ad litora torquent per conubia nostra.", "price": "340", "totalProduct": "6", "image": "/images/product-images/cart-img-4.jpg"},
+        {"id": "5", "productName": "product 5", "productInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, sapiente.", "price": "520", "totalProduct": "8", "image": "/images/product-images/headphone.jpg"},
+        {"id": "6", "productName": "product 6", "productInfo": "Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.", "price": "987", "totalProduct": "9", "image": "/images/product-images/lens.jpg"},
+        {"id": "7", "productName": "product 7", "productInfo": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.", "price": "765", "totalProduct": "11", "image": "/images/product-images/mart.jpg"},
+        {"id": "8", "productName": "product 8", "productInfo": "Class aptent taciti sociosqu ad litora torquent per conubia nostra.", "price": "734", "totalProduct": "14", "image": "/images/product-images/productEmployement.jpg"},
+        {"id": "9", "productName": "product 9", "productInfo": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, sapiente.", "price": "444", "totalProduct": "6", "image": "/images/product-images/shoes.jpg"}
     ]
 }

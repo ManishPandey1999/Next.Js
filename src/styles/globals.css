@@ -40,7 +40,7 @@ body {
 
 @media(max-width: 992px){ 
   .header_menu_open_bar{display: block;}
-  .header_menu_container.open_menu_container{position: absolute; width: 100%; height: 100vh; top: 0; left: 0; background: rgba(0, 0, 0, 0.1);}
+  .header_menu_container.open_menu_container{position: absolute; width: 100%; height: 100vh; top: 0; left: 0;}
 }
 
 @media(min-width: 767px) and (max-width: 992px) {

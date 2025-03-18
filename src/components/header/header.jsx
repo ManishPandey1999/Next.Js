@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <>
-      <header className='main_header shadow-lg shadow-gray-500/10 w-full relative'>
+      <header className='main_header shadow-lg shadow-gray-500/10 w-full sticky top-0 z-20 bg-white'>
         <section className="header_section bg-white pe-5 ps-[40px] md:px-[60px] py-2 flex items-center justify-between">
           <div className="header_logo_container">
             <div className="header_logo_row">
@@ -49,7 +49,7 @@ function Header() {
             <div className="header_menu_open_bar text-black absolute left-[15px] top-[10px]" onClick={handleNavBarBtn}>
               <Menu className='w-[22px] h-[22px]' />
             </div>
-            <div className={`header_menu_row flex items-center md:gap-5 text-black md:text-base ${openNavBar ? 'open_nav rounded gap-3 shadow text-sm' : 'close_nav'} `}>
+            <div className={`header_menu_row flex items-center md:gap-5 text-black md:text-base ${openNavBar ? 'open_nav rounded gap-3 shadow text-sm md:shadow-none' : 'close_nav'} `}>
               {
                 menu.map((item, index) => (
                   <Link key={index} className='hover:underline hover:text-orange-500' href={item.link}>
