@@ -10,7 +10,7 @@ function Cart() {
   const [cart, setCart] = useState({});
   const [cartItems, setCartItems] = useState({});
   const [totalAmount, setTotalAmount] = useState(0);
-  const [totalProduct, setTotalProduct] = useState(0);
+  const [totalProduct, setTotalProduct] = useState('');
 
   useEffect(() => {
     fetch('/api/dataroute')
@@ -41,16 +41,6 @@ function Cart() {
     }
   }, [cart]);
 
-  useEffect(() => {
-    const total = Object.keys(cartItems).reduce((sum, id) => {
-      const quantity = cartItems[id] || 1;
-      const prices = cartData.find(item => item.id == id)?.price || 0;
-      return sum + (quantity * prices);
-    },  0);
-    setTotalAmount(total);
-  }, [cartItems, cartData, cart]);
-
-
   const removeFromCart = (productId) => {
     setCart(prevCart => {
       const updatedCart = { ...prevCart };
@@ -64,6 +54,34 @@ function Cart() {
       return updatedCartItems;
     });
   };
+
+  useEffect(() => {
+    const initialCartItems = {};
+    Object.keys(cart).forEach(id => {
+      initialCartItems[id] = 1;
+    });
+    setCartItems(initialCartItems);
+  }, [cartData.length > 0 && Object.keys(cart).length]);
+
+  useEffect((productId) => {
+    setCartItems(prevCartItems => {
+      const updatedCartItems = { ...prevCartItems };
+      delete updatedCartItems[productId];  
+      return updatedCartItems;
+    });
+  }, [])
+
+  useEffect(() => {
+    console.log(cartItems);
+    const totalAmount = Object.keys(cartItems).reduce((sum, id) => {
+      const quantity = typeof cartItems[id] === 'number' ? cartItems[id] : 1;
+      const prices = cartData.find(item => item.id === id)?.price || 0;
+      return sum + (quantity * prices);
+    }, 0);
+    setTotalAmount(totalAmount);
+  }, [cart, cartItems]);
+  
+  
   
 
   const cartItem = useMemo(() => {
@@ -117,7 +135,7 @@ function Cart() {
                             <button className="cart_quantity_button minus_btn px-3 py-1 me-2 border rounded" 
                               onClick={() => {
                                 setCartItems(prev => {
-                                  const newQuantity = Math.max(0, (prev[item.id] || 1) - 1);
+                                  const newQuantity = Math.max(1, (prev[item.id] || 1) - 1);
                                   return {
                                     ...prev,
                                     [item.id]: newQuantity
